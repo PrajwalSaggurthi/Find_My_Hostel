@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login form with JavaScript Validation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="logo text-center">
+  <h1>FIND MY HOSTEL</h1>
+</div>
+<div class="wrapper">
+    <a href="{{url_for('home')}}"><button>LOG OUT</button></a>
+  <div class="inner-warpper text-center">
+    <h2 class="title">Welcome</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th><button style="background-color: black; color: azure;">Hostel_Name</button></th>
+                <th><button style="background-color: black; color: azure;">Email</button></th>
+                <th><button style="background-color: black; color: azure;">Rooms</button></th>
+                <th><button style="background-color: black; color: azure;">Prices</button></th>
+            </tr>
+        </thead>
+        {%for i in data%}
+        <tr>
+            {%for j in i%}
+            <td><button>{{j}}</button></td>
+            {%endfor%}
+        </tr>
+        {%endfor%}
+    </table>
+  </div>
+</div>
+
+<!-- you don't need that :)  -->
+<div class="direction">
+  Hassle Free Hostel Finder!!
+  Book your bed Quickly!!
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

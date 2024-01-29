@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login form with JavaScript Validation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="logo text-center">
+    <a href="{{url_for('home')}}"><h1>FIND MY HOSTEL</h1></a>
+</div>
+<div class="wrapper">
+  <div class="inner-warpper text-center">
+    <h2 class="title">Create an account</h2>
+    <form action="#" id="formvalidate" method="post">
+    <div class="input-group">
+      <input class="form-control" name="First_Name" id="First_Name" type="text" placeholder="First Name" />
+      <span class="lighting"></span>
+    </div>
+  
+    <div class="input-group">
+      <input class="form-control" name="Last_Name" id="Last_Name" type="Last Name" placeholder="Last Name" />
+      <span class="lighting"></span>
+    </div>
+  
+    <div class="input-group">
+      <input class="form-control" name="Email" id="Email" type="email" placeholder="Email Address" />
+      <span class="lighting"></span>
+    </div>
+    <div class="input-group">
+      <input class="form-control" name="Phone" id="Phone" type="text" placeholder="Phone Number" />
+      <span class="lighting"></span>
+    </div>
+    <div class="input-group">
+      <input class="form-control" name="userPassword" id="Phone" type="password" placeholder="Enter Password" />
+      <span class="lighting"></span>
+    </div>
+  
+        <button type="submit" id="Create">Create</button>
+      </form>
+  </div>
+  <div class="signup-wrapper text-center">
+    <a href="{{url_for('loginf')}}">Already had an Account!!<span class="text-primary">Login</span></a>
+  </div>
+</div>
+
+<div class="direction">
+  Hassle Free Hostel Finder!!
+  Book your bed Quickly!!
+</div>
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

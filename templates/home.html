@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login form with JavaScript Validation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+<body>
+<div class="logo text-center">
+  <h1>FIND MY HOSTEL</h1>
+</div>
+<div class="wrapper">
+  <div class="inner-warpper text-center">
+    <h2 class="title">Login as</h2>
+    <form action="" id="formvalidate">
+      <div class="input-group">
+        <a href="{{url_for('loginp')}}"><h2 style="color:rgb(0, 128, 90);">PROVIDER</h2></a>
+        <span class="lighting"></span>
+      </div>
+      <div class="input-group">
+        <a href="{{url_for('loginf')}}"><h2 style="color:rgb(0, 128, 90);">FINDER</h2></a>
+        <span class="lighting"></span>
+      </div>
+
+      <button type="submit" id="login">About Us</button>
+    </form>
+  </div>
+</div>
+<div class="direction">
+  Hassle Free Hostel Finder!!
+  Book your bed Quickly!!
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
